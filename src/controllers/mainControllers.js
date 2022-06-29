@@ -1,6 +1,9 @@
+const path = require ('path')
+
+
 const controller = {
     index: (req,res) => {
-        res.send("Bienvenidos a la app");
+        res.sendFile(path.join(__dirname, '../views/home.html'))
     },
 
     contact: (req,res) => {
